@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Futbol.fc</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="" href="css/style.css">
+	
+</head>
+<body>
+   <h1>La Prevía</h1>
+   <!--menu-->
+   <nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="galeria.html">Galeria</a>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="noticias.html">Noticias</a></li>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
+	<!--termina menu-->
+    
+     <!--carousel-->
+	<div class="carousel">
+		<div class="slides">
+			<img src="img/galeria1.jpg"></div>
+			<img src="img/imagen.jpg"></div>
+			<img src="img/galeria13.jpg"></div>
+		</div>
+		<div class="navigation">
+			<button class="prev">&#8249;</button>
+			<button class="next">&#8250;</button>
+		</div>
+	</div>
+	
+
+	<!--termina carusel-->
+
+
+    <!--<script type="text/javascript">
+	<script>
+		// Script para el carrusel
+		const carousel = document.querySelector('.carousel');
+		const slides = Array.from(carousel.querySelectorAll('.slides .slide'));
+		const prevButton = carousel.querySelector('.prev');
+		const nextButton = carousel.querySelector('.next');
+		let currentSlide = 0;
+		
+		// Agregamos evento click para el botón siguiente
+		nextButton.addEventListener('click', () => {
+			currentSlide++;
+			if (currentSlide === slides.length) {
+				currentSlide = 0;
+			}
+			updateSlidePosition();
+			updateNavigation();
+		});
+
+		// Agregamos evento click para el botón anterior
+		prevButton.addEventListener('click', () => {
+			currentSlide--;
+			if (currentSlide < 0) {
+				currentSlide = slides.length - 1;
+			}
+			updateSlidePosition();
+			updateNavigation();
+		});
+
+		// Función para actualizar la posición de los slides
+		function updateSlidePosition() {
+			const slideWidth = slides[currentSlide].getBoundingClientRect().width;
+			const offset = currentSlide * slideWidth;
+			carousel.querySelector('.slides').style.transform = `translateX(-${offset}px)`;
+		}
+
+		// Función para actualizar la navegación
+		function updateNavigation() {
+			slides.forEach((slide, index) => {
+				if (index === currentSlide) {
+					slide.classList.add('active');
+				} else {
+					slide.classList.remove('active');
+				}
+			});
+		}
+
+		updateSlidePosition();
+		update
+</script>-->
+<footer>
+  <p>Derechos reservados &copy; 2023 Equipo Deportivo</p>
+</footer>
+</body>
+</html>
